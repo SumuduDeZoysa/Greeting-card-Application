@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_gravity="center_horizontal"
+            android:background="@android:color/background_light" android:layout_margin="10dp">
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/storeImagea_s" android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"/>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" android:layout_marginTop="94dp">
+        </TableRow>
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_centerVertical="true"
+                android:layout_alignParentStart="true">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Store"
+                    android:id="@+id/giftNamegi"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="20dp"
+                    android:layout_alignTop="@+id/storeNamea_s" android:layout_alignParentLeft="true"/>
+            <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="10"
+                    android:id="@+id/storeNamea_s"
+                    android:textColor="@android:color/background_dark"
+                    android:background="#566d6b70" android:autoText="false"
+                    android:textSize="20dp"
+                    android:layout_centerVertical="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

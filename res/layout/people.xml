@@ -1,0 +1,146 @@
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:background="@android:color/background_light"
+            >
+
+        <TextView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/daysRemain"
+                android:autoText="false"
+                android:layout_marginTop="36dp"
+                android:textColor="@android:color/holo_red_dark" android:textStyle="normal|bold" android:gravity="right"
+                android:textSize="20dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearLayout"
+                android:divider="@android:color/background_dark" android:dividerPadding="1dp"
+                android:layout_below="@+id/daysRemain" android:layout_alignParentLeft="true"
+                android:layout_marginTop="10dp">
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:text="Group Name   :"
+                    android:id="@+id/textView2"
+                    android:layout_alignParentTop="true" android:layout_alignParentLeft="true"
+                    android:textColor="@android:color/darker_gray" android:textSize="20sp"
+                    android:layout_marginLeft="10dp"/>
+            <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/groupSpinner"
+                    android:gravity="right"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/textView2"
+                    android:popupBackground="#ff6d6b70" android:layout_margin="10dp"/>
+        </LinearLayout>
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true" android:id="@+id/tableRow"
+                android:layout_below="@+id/linearLayout">
+            <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tableRow2"
+                        android:divider="@android:color/background_dark"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentLeft="true" android:layout_marginTop="20dp"
+                        android:dividerPadding="1dp">
+                    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="49dp" android:clickable="true"
+                            android:divider="?android:dividerHorizontal"
+                            android:id="@+id/relativeLayout"
+                            >
+                        <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="On List"
+                                android:id="@+id/textView"
+                                android:textColor="@android:color/darker_gray"
+                                android:gravity="left|center|center_horizontal"
+                                android:layout_alignParentTop="true" android:layout_toStartOf="@+id/noOfGroups"
+                                android:layout_alignParentStart="true"/>
+                        <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="Budget"
+                                android:id="@+id/noOfGroups" android:layout_alignParentTop="true"
+                                android:textColor="@android:color/darker_gray" android:layout_centerHorizontal="true"
+                                android:gravity="center"/>
+                        <TextView
+                                android:layout_width="70dp"
+                                android:layout_height="wrap_content"
+                                android:text="Remaining"
+                                android:id="@+id/textView3"
+                                android:layout_alignParentTop="true"
+                                android:textColor="@android:color/darker_gray"
+                                android:gravity="center|center_horizontal|right" android:layout_alignParentEnd="true"
+                                android:layout_toEndOf="@+id/noOfGroups" android:layout_alignParentRight="true"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  "
+                                android:id="@+id/spentpeople"
+                                android:layout_toStartOf="@+id/noOfGroups"
+                                android:textColor="@android:color/background_dark"
+                                android:gravity="left|center_horizontal"
+                                android:layout_below="@+id/textView"
+                                android:textStyle="bold" android:layout_alignParentStart="true"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  "
+                                android:id="@+id/budgetpeople"
+                                android:layout_toStartOf="@+id/textView3" android:layout_alignTop="@+id/spentpeople"
+                                android:textColor="@android:color/background_dark"
+                                android:layout_alignEnd="@+id/noOfGroups" android:layout_alignStart="@+id/noOfGroups"
+                                android:gravity="center_horizontal" android:textStyle="bold"
+                                android:layout_centerHorizontal="true"
+                                android:clickable="true"/>
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="  "
+                                android:id="@+id/remainpeople"
+                                android:textColor="@android:color/background_dark"
+                                android:gravity="center_horizontal|right"
+                                android:textStyle="bold"
+                                android:layout_below="@+id/textView3" android:layout_alignEnd="@+id/textView3"
+                                android:layout_alignStart="@+id/textView3" android:layout_toEndOf="@+id/budgetpeople"
+                                android:layout_alignParentEnd="true" android:layout_alignParentRight="true"/>
+                    </RelativeLayout>
+                </TableRow>
+            </RelativeLayout>
+        </TableRow>
+        <ListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/group_list" android:clickable="true"
+                android:drawSelectorOnTop="true" android:divider="@android:color/background_dark"
+                android:dividerHeight="1dp"
+                android:layout_alignParentLeft="true" android:layout_below="@+id/tableRow"
+                android:layout_margin="10dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

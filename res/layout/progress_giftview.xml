@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@android:color/background_light">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/imageView"/>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_margin="5dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/giftNamepr_g" android:textColor="@android:color/background_dark"
+                android:layout_gravity="left" android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true" android:textSize="20dp"/>
+        <TextView
+                android:layout_width="77dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/personNamepr_g" android:textColor="@android:color/background_dark"
+                android:gravity="center_horizontal" android:layout_gravity="center_horizontal"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/giftPricepr_g" android:gravity="right"
+                android:textColor="@android:color/background_dark" android:layout_gravity="right"
+                android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

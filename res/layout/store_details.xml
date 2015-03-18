@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:background="@android:color/background_light">
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_margin="10dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Large Text"
+                android:id="@+id/storeNames_d"
+                android:layout_marginTop="35dp"
+                android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+                android:textColor="@android:color/background_dark"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/no_of_gifts"
+                android:textColor="@android:color/background_dark"
+                android:layout_below="@+id/storeNames_d" android:layout_centerHorizontal="true"/>
+        <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/store_detailslistView" android:layout_alignParentEnd="true"
+                android:layout_below="@+id/no_of_gifts" android:layout_marginTop="20dp"/>
+    </RelativeLayout>
+</RelativeLayout>

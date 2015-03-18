@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/submenu"
+          android:title="Add"
+          android:showAsAction="ifRoom|withText">
+        <menu>
+            <item android:id="@+id/action_addPerson"
+
+                  android:title="Add Person"/>
+            <item android:id="@+id/action_addGroup"
+
+                  android:title="Add Group"/>
+            <item android:id="@+id/action_addStore"
+
+                  android:title="Add Store"/>
+        </menu>
+    </item>
+</menu>

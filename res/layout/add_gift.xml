@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:background="@android:color/background_light">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_gravity="center_horizontal"
+            android:background="@android:color/background_light" android:layout_margin="10dp">
+        <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tableRow" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:id="@+id/personNamep_v"
+                        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+                        android:textColor="@android:color/background_dark"/>
+                <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:id="@+id/imageView4"
+                        android:layout_alignParentTop="true" android:layout_alignParentStart="true"/>
+            </RelativeLayout>
+        </TableRow>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Gift Name"
+                  android:id="@+id/giftNamegi"
+                  android:textColor="@android:color/darker_gray"
+                  android:layout_below="@+id/tableRow" android:layout_alignParentLeft="true" android:textSize="20dp"
+                  android:layout_marginTop="56dp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_namea_g"
+                android:textColor="@android:color/background_dark"
+                android:background="#566d6b70" android:enabled="true"
+                android:textSize="20dp" android:layout_alignBottom="@+id/giftNamegi"
+                android:layout_toRightOf="@+id/giftNamegi"
+                android:textAlignment="gravity" android:layout_alignTop="@+id/giftNamegi"
+                android:layout_toLeftOf="@+id/gifts"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Price"
+                android:id="@+id/storeName"
+                android:textColor="@android:color/darker_gray"
+                android:layout_alignBottom="@+id/giftPricea_g" android:layout_alignStart="@+id/budgetp_v"
+                android:layout_marginTop="56dp" android:textSize="20dp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/giftPricea_g"
+                android:layout_below="@+id/gift_namea_g" android:layout_alignParentEnd="true"
+                android:layout_marginTop="41dp" android:textColor="@android:color/background_dark"
+                android:background="#566d6b70" android:editable="true"
+                android:layout_alignParentRight="true" android:textSize="20dp"
+                android:layout_toRightOf="@+id/giftNamegi"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Strore"
+                android:id="@+id/budgetp_v"
+                android:textColor="@android:color/darker_gray"
+                android:layout_below="@+id/giftPricea_g" android:layout_marginTop="56dp" android:textSize="20dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Status"
+                  android:id="@+id/giftAmountValuegi"
+                  android:textColor="@android:color/darker_gray"
+                  android:layout_marginTop="41dp" android:textSize="20dp"
+                  android:layout_below="@+id/storea_g" android:layout_alignParentLeft="true"/>
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/gift_statusa_g"
+                android:background="@android:drawable/btn_dropdown"
+                android:gravity="right"
+                android:popupBackground="#926D6B70"
+                android:layout_alignTop="@+id/giftAmountValuegi" android:layout_alignParentRight="true"
+                android:layout_alignLeft="@+id/storea_g"/>
+        <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/storea_g"
+                android:layout_alignParentRight="true"
+                android:popupBackground="#ff6d6b70"
+                android:gravity="right" android:layout_toRightOf="@+id/giftNamegi"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_alignTop="@+id/budgetp_v"/>
+        <Spinner
+                android:layout_width="45dp"
+                android:layout_height="30dp"
+                android:id="@+id/gifts"
+                android:background="@android:drawable/btn_dropdown"
+                android:popupBackground="#ff6d6b70"
+                android:spinnerMode="dropdown"
+                android:layout_alignRight="@+id/giftPricea_g" android:layout_alignTop="@+id/gift_namea_g"/>
+    </RelativeLayout>
+</LinearLayout>

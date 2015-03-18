@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+        android:weightSum="1" android:background="@android:color/background_light">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" android:layout_margin="10dp" android:id="@+id/linearLayout">
+    </LinearLayout>
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:background="@android:color/background_light"
+            android:layout_alignParentTop="true" android:layout_alignLeft="@+id/linearLayout"
+            android:layout_margin="10dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Medium Text"
+                android:id="@+id/personNameg"
+                android:textColor="@android:color/background_dark"
+                android:layout_alignParentTop="true" android:layout_alignLeft="@+id/textView"
+                android:textSize="25dp"/>
+        <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:ems="10"
+                android:id="@+id/budgetg"
+                android:textColor="@android:color/background_dark"
+                android:layout_below="@+id/personNameg" android:layout_toRightOf="@+id/textView"/>
+        <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/personImageg"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="15dp" android:layout_alignParentTop="true"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget"
+                android:id="@+id/textView"
+                android:layout_marginLeft="32dp" android:layout_alignBottom="@+id/budgetg"
+                android:layout_toRightOf="@+id/personImageg" android:textColor="@android:color/darker_gray"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Spent  "
+                android:id="@+id/textView2" android:layout_below="@+id/budgetg"
+                android:layout_alignLeft="@+id/textView" android:textColor="@android:color/darker_gray"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spentAmountgr"
+                android:textColor="@android:color/background_dark"
+                android:layout_below="@+id/budgetg" android:layout_toRightOf="@+id/textView"/>
+        <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/background_light"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentBottom="true" android:layout_alignParentLeft="true">
+            <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="365dp"
+                    android:id="@+id/groupListViewg" android:divider="@android:color/background_dark"
+                    android:dividerHeight="0.5dp"/>
+        </TableRow>
+    </RelativeLayout>
+</RelativeLayout>

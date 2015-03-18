@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp" android:background="@android:color/background_light"
+                android:layout_margin="5dp">
+            <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/personImage"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/spentp_v" android:layout_gravity="center_horizontal"
+                    android:layout_toEndOf="@+id/personImage"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/spentAmout"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_alignParentBottom="true" android:layout_alignStart="@+id/spentp_v"/>
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="New Text"
+                    android:id="@+id/budgetp_v"
+                    android:textColor="@android:color/background_dark"
+                    android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"
+                    android:gravity="right" android:layout_alignParentLeft="false"
+                    android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </TableRow>
+</LinearLayout>
